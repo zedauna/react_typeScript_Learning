@@ -8,7 +8,9 @@ const Footer = () => {
         <p className="mars-font text-2xl text-center">alphaSpace, by Jéros</p>
         <p className="underline">ressources:</p>
         <p className="text-center">
-          <Link to={"https://www.nasa.gov/"}>Nasa</Link>|<Link to={"jerosweb.com"}>Git</Link>
+         <Link to={"https://www.nasa.gov/"}>Nasa</Link>|
+          <Link to={"https://github.com/zedauna/react_typeScript_Learning"}>Git</Link>|
+          <Link to={"https://www.jerosweb.com/"}>Jerosweb.Com</Link>
         </p>
       </div>
 
