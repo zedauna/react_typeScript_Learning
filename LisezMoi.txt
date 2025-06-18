@@ -1,0 +1,17 @@
+https://ui.shadcn.com/
+
+https://fonts.google.com/
+
+IMAGE
+https://pixabay.com/fr/
+https://www.pexels.com/fr-fr/
+https://www.svgrepo.com/
+
+ICONE
+https://lucide.dev/
+
+API
+https://www.spaceflightnewsapi.net/
+https://www.datastro.eu/explore/dataset/nasahubble/table/?disjunctive.album_name_tags&sort=photo_title
+
+https://api.nasa.gov/
