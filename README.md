@@ -1,54 +1,203 @@
-# React + TypeScript + Vite
+# 🌌 React TypeScript learning - Space Data Explorer  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet a été réalisé dans le cadre de ma formation **autodidacte** afin de renforcer mes compétences en **React**, **TypeScript** et **Tailwind CSS**.  
+L’objectif était de développer une **application web moderne** permettant de consulter différentes données spatiales en provenance de plusieurs **API publiques**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fonctionnalités
 
-## Expanding the ESLint configuration
+- 🔭 **Articles d’actualité spatiale** via [Spaceflight News API](https://api.spaceflightnewsapi.net/v4/articles/)  
+- 🌠 **Images du télescope Hubble** via [Datastro NASA Hubble dataset](https://www.datastro.eu/)  
+- 📸 **Astronomy Picture of the Day (APOD)** via [NASA API](https://api.nasa.gov/)  
+- 🌌 **Images du télescope spatial James Webb** via [JWST API](https://api.jwstapi.com/)  
+- 🚀 **Données sur SpaceX** via [SpaceX API v3](https://github.com/r-spacex/SpaceX-API)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Stack technique
+
+- ⚛️ **React 18**  
+- 🟦 **TypeScript**  
+- 🎨 **Tailwind CSS** pour le style réactif et moderne  
+- 🌐 **Axios** pour les appels API  
+
+---
+
+## 📂 Structure du projet
+
+```bash
+REACT_TYPESCRIPT_LEARNING
+|   .env
+|   .gitignore
+|   components.json
+|   eslint.config.js
+|   index.html
+|   LisezMoi.txt
+|   package.json
+|   pnpm-lock.yaml
+|   README.md
+|   tree.md
+|   tsconfig.app.json
+|   tsconfig.json
+|   tsconfig.node.json
+|   vite.config.ts
+|   _redirects
+
+|   App.css
+|   App.tsx
+|   index.css
+|   main.tsx
+|   vite-env.d.ts
+|   
++---assets
+|   |   react.svg
+|   |   
+|   +---fonts
+|   |   +---mars
+|   |   |   |   Mars Bold.otf
+|   |   |   |   Mars Bold.ttf
+|   |   |   |   Mars Thin.otf
+|   |   |   |   Mars Thin.ttf
+|   |   |   |   Mars.otf
+|   |   |   |   Mars.ttf
+|   |   |   |   
+|   |   |   \---_zip
+|   |   |           Mars.zip
+|   |   |           
+|   |   \---sf
+|   |       |   SFMonoBold.otf
+|   |       |   SFMonoBoldItalic.otf
+|   |       |   SFMonoHeavy.otf
+|   |       |   SFMonoHeavyItalic.otf
+|   |       |   SFMonoLight.otf
+|   |       |   SFMonoLightItalic.otf
+|   |       |   SFMonoMedium.otf
+|   |       |   SFMonoMediumItalic.otf
+|   |       |   SFMonoRegular.otf
+|   |       |   SFMonoRegularItalic.otf
+|   |       |   SFMonoSemibold.otf
+|   |       |   SFMonoSemiboldItalic.otf
+|   |       |   
+|   |       \---zip
+|   |               sf-mono-cufonfonts.zip
+|   |               
+|   \---imgs
+|           pexels_pixabay.jpg
+|           pexels_spacex.jpg
+|           rocket.svg
+|           
++---components
+|   |   ApodLauncher.tsx
+|   |   ApodPlayer.tsx
+|   |   CardsGrid.tsx
+|   |   ErrorElement.tsx
+|   |   Filters.tsx
+|   |   Footer.tsx
+|   |   FormInput.tsx
+|   |   Header.tsx
+|   |   HubbleLauncher.tsx
+|   |   HubblePageCard.tsx
+|   |   ImageCard.tsx
+|   |   index.tsx
+|   |   LinksDesktop.tsx
+|   |   LinksMobile.tsx
+|   |   Navbar.tsx
+|   |   NewsBubble.tsx
+|   |   NewsCard.tsx
+|   |   NewsLauncher.tsx
+|   |   NewsLauncherBubbledCards.tsx
+|   |   NewsLauncherHeader.tsx
+|   |   NewsLauncherSquaredCards.tsx
+|   |   NewsPageCard.tsx
+|   |   Overview.tsx
+|   |   PaginationContainer.tsx
+|   |   RelatedNews.tsx
+|   |   RocketCard.tsx
+|   |   SpaceXLauncher.tsx
+|   |   Title.tsx
+|   |   WebbLauncher.tsx
+|   |   WebbTelescopeSummary.tsx
+|   |   
+|   \---ui
+|           button.tsx
+|           card.tsx
+|           dropdown-menu.tsx
+|           input.tsx
+|           label.tsx
+|           pagination.tsx
+|           
++---lib
+|       utils.ts
+|       
++---pages
+|       Apod.tsx
+|       ErrorMain.tsx
+|       HomeLayout.tsx
+|       Hubble.tsx
+|       index.tsx
+|       Landing.tsx
+|       News.tsx
+|       SingleHubble.tsx
+|       Spacex.tsx
+|       Webb.tsx
+|       
++---rappel
+|       Rappel.js
+|       
+\---utils
+        constants.ts
+        customFetch.ts
+        functions.ts
+        links.ts
+        pagination.ts
+        types.ts
+        
 ```
+### 🚀 Installation & Lancement
+# Cloner le repo
+git clone https://github.com/zedauna/react_typeScript_Learning.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd react_typeScript_Learning
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Installer les dépendances
+pnpm install   # ou npm install / yarn install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# Lancer l’application
+pnpm dev
+
+L’application sera disponible sur http://localhost:5173
+
+### ☁️ Déploiement sur Netlify
+Le projet est déployé en continu sur Netlify.
+Chaque push sur la branche main déclenche automatiquement un build et déploiement.
+La configuration Netlify utilise :
+
+```toml
+# netlify.toml
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
 ```
+🌍 Démo en ligne : https://alpha-spacex-news.netlify.app
+
+### 🌍 Aperçu du projet
+
+Quelques exemples de fonctionnalités :
+  ✅ Affichage des derniers articles sur l’espace
+  ✅ Récupération et affichage des images APOD de la NASA
+  ✅ Exploration des photos JWST et Hubble
+  ✅ Détails sur les lancements SpaceX
+
+### 📚 Objectifs pédagogiques atteints
+
+Compréhension et mise en œuvre des Hooks React (useState, useEffect, custom hooks).
+Manipulation des Signatures TypeScript pour sécuriser les données.
+Styling rapide et responsive avec Tailwind CSS.
+Gestion d’appels multiples vers des API REST.
+Mise en pratique de bonnes pratiques : découpage en composants, typages stricts, services API dédiés.
+Déploiement continu sur Netlify.
+
+### 📜 Licence
+Projet open-source disponible sous licence MIT.
