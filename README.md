@@ -154,16 +154,16 @@ REACT_TYPESCRIPT_LEARNING
         types.ts
         
 ```
-### 🚀 Installation & Lancement
-# Cloner le repo
+# 🚀 Installation & Lancement
+## Cloner le repo
 git clone https://github.com/zedauna/react_typeScript_Learning.git
 
 cd react_typeScript_Learning
 
-# Installer les dépendances
+## Installer les dépendances
 pnpm install   # ou npm install / yarn install
 
-# Lancer l’application
+## Lancer l’application
 pnpm dev
 
 L’application sera disponible sur http://localhost:5173
@@ -182,7 +182,7 @@ La configuration Netlify utilise :
 ```
 🌍 Démo en ligne : https://alpha-spacex-news.netlify.app
 
-### 🌍 Aperçu du projet
+## 🌍 Aperçu du projet
 
 Quelques exemples de fonctionnalités :
   ✅ Affichage des derniers articles sur l’espace
@@ -190,7 +190,7 @@ Quelques exemples de fonctionnalités :
   ✅ Exploration des photos JWST et Hubble
   ✅ Détails sur les lancements SpaceX
 
-### 📚 Objectifs pédagogiques atteints
+## 📚 Objectifs pédagogiques atteints
 
 Compréhension et mise en œuvre des Hooks React (useState, useEffect, custom hooks).
 Manipulation des Signatures TypeScript pour sécuriser les données.
@@ -199,5 +199,5 @@ Gestion d’appels multiples vers des API REST.
 Mise en pratique de bonnes pratiques : découpage en composants, typages stricts, services API dédiés.
 Déploiement continu sur Netlify.
 
-### 📜 Licence
+## 📜 Licence
 Projet open-source disponible sous licence MIT.
